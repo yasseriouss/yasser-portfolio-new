@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://yassersallam.com/</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://yassersallam.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://yassersallam.com/?lang=ar"/>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://yassersallam.com/#about</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Experience Section -->
+  <url>
+    <loc>https://yassersallam.com/#experience</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Projects Section -->
+  <url>
+    <loc>https://yassersallam.com/#projects</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Skills Section -->
+  <url>
+    <loc>https://yassersallam.com/#skills</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Education Section -->
+  <url>
+    <loc>https://yassersallam.com/#education</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Reviews Section -->
+  <url>
+    <loc>https://yassersallam.com/#reviews</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://yassersallam.com/#contact</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

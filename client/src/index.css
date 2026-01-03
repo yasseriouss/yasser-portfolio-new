@@ -361,3 +361,82 @@
 [dir="rtl"] .timeline-dot {
   @apply left-auto right-4 md:right-1/2 translate-x-1/2;
 }
+
+
+/* Performance optimizations */
+@layer base {
+  /* Optimize font rendering */
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Reduce layout shifts */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Optimize animations for performance */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Print styles for SEO */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    
+    body {
+      background: white !important;
+      color: black !important;
+    }
+    
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+  }
+}
+
+/* Accessibility improvements */
+@layer components {
+  /* Skip to main content link */
+  .skip-link {
+    @apply absolute -top-10 left-0 bg-primary text-primary-foreground px-4 py-2 z-50;
+    transition: top 0.3s;
+  }
+
+  .skip-link:focus {
+    @apply top-0;
+  }
+
+  /* Focus visible styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Screen reader only */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+    clip: rect(0, 0, 0, 0);
+  }
+}
+
+/* Lazy loading placeholder */
+.lazy-image {
+  @apply bg-muted animate-pulse;
+}
+
+.lazy-image.loaded {
+  @apply bg-transparent animate-none;
+}
