@@ -56,3 +56,7 @@
 - [x] Animations and transitions
 - [x] SEO optimization
 - [x] Performance optimization
+
+## Deployment
+- [ ] Push to GitHub repository
+- [ ] Publish website
